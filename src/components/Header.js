@@ -4,7 +4,7 @@ export default function Header() {
       <section>
         <div>
           <h3 className="text-3xl text-yellow-100">Apartment Locator</h3>
-          <p className="uppercase">Find your appartment today!</p>
+          <p className="uppercase">Find your appartment today</p>
         </div>
       </section>
       <ul className="flex justify-center items-center gap-2 text-xl uppercase">
