@@ -33,9 +33,9 @@ export default function App() {
   }
 
   return (
-    <div className="bg-gray-200">
+    <div className="">
       <Header />
-      <main className="md:h-screen">
+      <main className="h-screen">
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn />} />
