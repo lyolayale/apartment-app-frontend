@@ -31,10 +31,10 @@ export default function Home() {
     },
   ];
   return (
-    <section className="w-full h-full pb-44">
+    <section className="h-screen">
       <div
         id="finder"
-        className="mx-auto h-screen flex flex-col justify-center items-center gap-5 mb-24 bg-slate-700 py-10"
+        className="mx-auto flex flex-col justify-center items-center gap-5 mb-24 bg-slate-700 py-10"
       >
         <div
           id="home-text"
@@ -50,7 +50,7 @@ export default function Home() {
         <div className="w-3/5 text-2xl">
           <input
             placeholder="Atlanta, GA"
-            className="w-full mb-5 lg:mb-0 lg:w-2/4 p-[1.1rem] rounded md:rounded-none md:rounded-l-md focus:outline-none"
+            className="w-full mb-5 lg:mb-0 lg:w-2/4 p-[1.1rem] rounded md:rounded-none lg:rounded-l-md focus:outline-none"
             type="text"
           />
           <select className="hidden lg:inline w-1/6 p-[1.14rem] border-l-2 border-slate-500 text-gray-500 focus:outline-none">
@@ -70,16 +70,13 @@ export default function Home() {
             <option value="1000">$1000</option>
             <option value="1500">$1500</option>
           </select>
-          <button className="w-full lg:w-1/6 p-[1.11rem] rounded md:rounded-none md:rounded-r-md  border-slate-500 bg-yellow-100 text-gray-600">
+          <button className="w-full lg:w-1/6 p-[1.11rem] rounded md:rounded-none lg:rounded-r-md  border-slate-500 bg-yellow-100 text-gray-600">
             Search
           </button>
         </div>
       </div>
       <div id="apartment-cards-wrapper" className="mt-12 px-4 lg:px-0">
-        <h3
-          className="text-center text-2xl md:text-4xl text-gray-800 tracking-wide"
-          style={{ textShadow: "0 5px 5px rgba(100, 100, 100, 0.5)" }}
-        >
+        <h3 className="text-center text-3xl md:text-5xl text-gray-800 tracking-wide">
           Top Apartment Bargins in Altanta, GA
         </h3>
         <ul
@@ -89,7 +86,7 @@ export default function Home() {
           {apartments.map((apartment, i) => (
             <li
               key={i}
-              className="group flex flex-col justify-center items-center gap-2 w-3/4 sm:w-3/6 xl:w-1/4 h-[100%] pb-7 rounded-md border border-1 border-gray-300 shadow-md hover:scale-110 duration-100"
+              className="group flex flex-col justify-center items-center gap-2 w-3/4 sm:w-3/6 xl:w-1/4 h-[100%] pb-7 rounded-md border border-1 border-gray-300 shadow-md hover:scale-110 hover:shadow-none duration-200"
             >
               <img
                 className="object-cover rounded-t-md w-full"
