@@ -17,11 +17,11 @@ export default function Header() {
       </section>
       <ul className="flex justify-center items-center gap-2 text-xl uppercase">
         <NavLink to="/apartmentindex">
-          <li className="hidden md:inline cursor-pointer hover:text-yellow-100 hover:underline duration-200">
+          <li className=" cursor-pointer hover:text-yellow-100 hover:underline duration-200">
             All Listings
           </li>
         </NavLink>
-        <li className="cursor-pointer hover:text-yellow-100 hover:underline duration-200">
+        <li className="hidden md:inline cursor-pointer hover:text-yellow-100 hover:underline duration-200">
           Log In
         </li>
         <li className="hidden md:inline cursor-pointer hover:text-yellow-100 hover:underline duration-200">

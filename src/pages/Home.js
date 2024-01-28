@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import apartment1 from "../assets/images/inside-apartment-1.avif";
 import apartment2 from "../assets/images/inside-apartment-2.avif";
 import apartment3 from "../assets/images/inside-apartment-3.avif";
@@ -70,9 +71,11 @@ export default function Home() {
             <option value="1000">$1000</option>
             <option value="1500">$1500</option>
           </select>
-          <button className="w-full lg:w-1/6 p-[1.11rem] rounded md:rounded-none lg:rounded-r-md  border-slate-500 bg-yellow-100 text-gray-600">
-            Search
-          </button>
+          <NavLink to="/apartmentindex">
+            <button className="w-full lg:w-1/6 p-[1.11rem] rounded md:rounded-none lg:rounded-r-md  border-slate-500 bg-yellow-100 text-gray-600">
+              Search
+            </button>
+          </NavLink>
         </div>
       </div>
       <div id="apartment-cards-wrapper" className="mt-12 px-4 lg:px-0">
@@ -109,9 +112,11 @@ export default function Home() {
         </ul>
       </div>
       <h3 className="h-1/4 text-center mt-12 text-4xl font-thin tracking-wide">
-        <span className="text-slate-500 font-medium cursor-pointer">
-          View All Apartments
-        </span>{" "}
+        <NavLink to="/apartmentindex">
+          <span className="text-slate-500 font-medium cursor-pointer">
+            View All Apartments
+          </span>{" "}
+        </NavLink>
         in Altanta, GA
       </h3>
     </section>
