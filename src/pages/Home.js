@@ -101,9 +101,7 @@ export default function Home() {
                   Apartments - {apartment.beds} Beds | {apartment.price}
                 </p>
               </div>
-              <button
-                className={`text text-gray-700 rounded-3xl font-bold uppercase border border-1 border-${apartment.bgColor}-500 p-2 w-44 group-hover:border-slate-700 group-hover:bg-gray-400 group-hover:text-white group-hover:shadow-md hover:scale-105 duration-100`}
-              >
+              <button className="text text-gray-700 font-bold uppercase p-2 w-full group-hover:text-xl duration-500">
                 {apartment.btnText}
               </button>
             </li>

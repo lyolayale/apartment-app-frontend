@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function ApartmentIndex({ apartments }) {
   return (
-    <section id="apartment-index" className="h-screen">
+    <section id="apartment-index" className="h-[210vh] md:h-screen">
       <h2 className="text-center text-5xl mb-24">All Apartment Listings</h2>
       <ul className="list-none flex flex-col justify-center items-center gap-5 md:flex-row md:justify-evenly w-[90%] mx-auto">
         {apartments.map(apartment => (
@@ -13,7 +13,7 @@ export default function ApartmentIndex({ apartments }) {
               alt={`Apartment at ${apartment.street}`}
             />
             <div className="w-[90%] mx-auto p-5">
-              <p>{apartment.price}</p>
+              <p>${apartment.price} Mth.</p>
               <p>{apartment.street}</p>
               <p>
                 {apartment.city}, {apartment.state} {apartment.zip}
