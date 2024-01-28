@@ -1,3 +1,7 @@
+import inside1 from "./assets/images/inside-1-0.webp";
+import inside2 from "./assets/images/inside-1-1.webp";
+import inside3 from "./assets/images/inside-1-2.webp";
+
 let mockApartments = [
   {
     id: 1,
@@ -13,6 +17,9 @@ let mockApartments = [
     pets: "yes!",
     image:
       "https://images.unsplash.com/photo-1601971990427-f5d21086eb41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fGFwYXJ0bWVudHN8ZW58MHx8MHx8fDA%3D",
+    inside1: inside1,
+    inside2: inside2,
+    inside3: inside3,
     user_id: 1,
   },
   {
