@@ -33,7 +33,7 @@ export default function App() {
   }
 
   return (
-    <div className="">
+    <div>
       <Header />
       <main className="h-screen">
         <Routes>

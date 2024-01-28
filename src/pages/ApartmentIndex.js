@@ -2,8 +2,13 @@ import { NavLink } from "react-router-dom";
 
 export default function ApartmentIndex({ apartments }) {
   return (
-    <section id="apartment-index" className="h-[210vh] md:h-screen">
-      <h2 className="text-center text-5xl mb-24">All Apartment Listings</h2>
+    <section id="apartment-index" className="h-[210vh] md:h-screen p-20">
+      <h2
+        className="text-center text-5xl mb-24 text-[darkkhaki]"
+        style={{ textShadow: "0 7px 10px rgba(100, 100, 100, 0.3)" }}
+      >
+        All Apartment Listings
+      </h2>
       <ul className="list-none flex flex-col justify-center items-center gap-5 md:flex-row md:justify-evenly w-[90%] mx-auto">
         {apartments.map(apartment => (
           <li key={apartment.id} className="pb-4 shadow-lg shadow-gray-800">

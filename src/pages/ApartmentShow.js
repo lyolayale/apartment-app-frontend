@@ -9,7 +9,12 @@ export default function ApartmentShow({ apartments }) {
       id="apartmen-show"
       className="mx-auto h-110vh max-w-screen-lg p-20"
     >
-      <h2 className="text-center text-5xl mb-24">Apartment Listing</h2>
+      <h2
+        className="text-center text-[darkkhaki] text-5xl mb-24"
+        style={{ textShadow: "0 7px 10px rgba(100, 100, 100, 0.3)" }}
+      >
+        Apartment Listing
+      </h2>
       {currApartment && (
         <div className="flex flex-col md:flex-row justify-center items-start">
           <section
@@ -40,17 +45,17 @@ export default function ApartmentShow({ apartments }) {
           </section>
           <section className="w-[90%] mx-auto flex flex-col justify-center items-center gap-10 mt-10 md:mt-0">
             <img
-              className="w-[20rem] md:w-[12rem] md:hover:scale-[2] md:hover:m-40 md:hover:shadow md:shadow-lg md:hover:shadow-gray-800 duration-500"
+              className="w-[20rem] md:w-[12rem] md:hover:scale-[2] md:hover:m-40 md:hover:shadow md:shadow-lg md:hover:shadow-gray-800 md:hover:rounded-md duration-500"
               src={currApartment.inside1}
               alt="Interior apartment"
             />
             <img
-              className="w-[20rem] md:w-[12rem] md:hover:scale-[2] md:hover:my-40 md:hover:shadow md:shadow-lg md:hover:shadow-gray-800 duration-500"
+              className="w-[20rem] md:w-[12rem] md:hover:scale-[2] md:hover:my-40 md:hover:shadow md:shadow-lg md:hover:shadow-gray-800 md:hover:rounded-md duration-500"
               src={currApartment.inside3}
               alt="Interior apartment"
             />
             <img
-              className="w-[20rem] md:w-[12rem] md:hover:scale-[2] md:hover:my-40 md:hover:shadow md:shadow-lg md:hover:shadow-gray-800 duration-500"
+              className="w-[20rem] md:w-[12rem] md:hover:scale-[2] md:hover:my-40 md:hover:shadow md:shadow-lg md:hover:shadow-gray-800 md:hover:rounded-md duration-500"
               src={currApartment.inside2}
               alt="Interior apartment"
             />
