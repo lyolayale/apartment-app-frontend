@@ -37,7 +37,7 @@ export default function App() {
       <Header />
       <main className="h-screen">
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/apartment-app-frontend" element={<Home />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route
