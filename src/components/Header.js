@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center p-5 bg-gray-900 text-gray-50">
       <section>
-        <NavLink to="/">
+        <NavLink to="/apartment-app-frontend">
           <div>
             <h3 className="font-serif text-2xl md:text-4xl text-yellow-100 tracking-[4px] cursor-pointer">
               Apartment Locator
