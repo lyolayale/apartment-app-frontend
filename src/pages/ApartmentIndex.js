@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function ApartmentIndex({ apartments }) {
   return (
-    <section id="apartment-index" className="h-[210vh] md:h-screen p-20">
+    <section id="apartment-index" className="p-20">
       <h2
         className="text-center text-5xl mb-24 text-[darkkhaki]"
         style={{ textShadow: "0 7px 10px rgba(100, 100, 100, 0.3)" }}
