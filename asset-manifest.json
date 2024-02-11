@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/apartment-app-frontend/static/css/main.91a2e763.css",
-    "main.js": "/apartment-app-frontend/static/js/main.e85c035d.js",
+    "main.css": "/apartment-app-frontend/static/css/main.b4e18d4a.css",
+    "main.js": "/apartment-app-frontend/static/js/main.2345ce52.js",
     "static/js/787.866ac154.chunk.js": "/apartment-app-frontend/static/js/787.866ac154.chunk.js",
     "static/media/inside-1-4.jpeg": "/apartment-app-frontend/static/media/inside-1-4.428cfed593054a242193.jpeg",
     "static/media/inside-1-3.jpeg": "/apartment-app-frontend/static/media/inside-1-3.0cf0fa0421f1f86b5842.jpeg",
@@ -16,12 +16,12 @@
     "static/media/inside-apartment-1.avif": "/apartment-app-frontend/static/media/inside-apartment-1.12a28a7349609fd4b74b.avif",
     "static/media/inside-apartment-3.avif": "/apartment-app-frontend/static/media/inside-apartment-3.1a4978cfe1f3d333327f.avif",
     "index.html": "/apartment-app-frontend/index.html",
-    "main.91a2e763.css.map": "/apartment-app-frontend/static/css/main.91a2e763.css.map",
-    "main.e85c035d.js.map": "/apartment-app-frontend/static/js/main.e85c035d.js.map",
+    "main.b4e18d4a.css.map": "/apartment-app-frontend/static/css/main.b4e18d4a.css.map",
+    "main.2345ce52.js.map": "/apartment-app-frontend/static/js/main.2345ce52.js.map",
     "787.866ac154.chunk.js.map": "/apartment-app-frontend/static/js/787.866ac154.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91a2e763.css",
-    "static/js/main.e85c035d.js"
+    "static/css/main.b4e18d4a.css",
+    "static/js/main.2345ce52.js"
   ]
 }
