@@ -5,5 +5,6 @@ export { default as ApartmentNew } from "./ApartmentNew";
 export { default as ApartmentProtectedIndex } from "./ApartmentProtectedIndex";
 export { default as ApartmentShow } from "./ApartmentShow";
 export { default as ApartmentEdit } from "./ApartmentEdit";
-export { default as SignIn } from "./SignIn";
+export { default as LogIn } from "./LogIn";
 export { default as SignUp } from "./SignUp";
+export { default as ResetPassword } from "./ResetPassword";

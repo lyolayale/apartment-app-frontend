@@ -2,23 +2,20 @@ import { useState } from "react";
 import { useStytch } from "@stytch/react";
 import { useNavigate } from "react-router-dom";
 
-export default function SignUp() {
+export default function LogIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const stytchClient = useStytch();
   const navigate = useNavigate();
 
-  function signUp() {
-    stytchClient.passwords
-      .strengthCheck({ email, password })
-      .then(res => {
-        console.log("Success", res);
-      })
-      .catch(err => {
-        console.log("Error:", err);
-      });
+  function resetPasswordByEmail() {
+    stytchClient.passwords.resetByEmailStart({
+      email: "lyolayale19@gmail.com",
+    });
+  }
 
-    stytchClient.passwords.create({
+  function login() {
+    stytchClient.passwords.authenticate({
       email,
       password,
       session_duration_minutes: 60,
@@ -42,10 +39,20 @@ export default function SignUp() {
           placeholder="Password ..."
         />
         <button
-          onClick={signUp}
+          onClick={login}
           className="p-2 rounded bg-blue-950 text-gray-50 w-[75%]"
         >
-          Sign Up
+          Login
+        </button>
+      </div>
+
+      <div className="forgot-password flex flex-col justify-center items-center gap-5">
+        <p>Forgot your password?</p>
+        <button
+          onClick={resetPasswordByEmail}
+          className="p-2 bg-blue-800 text-gray-50 rounded w-[10rem]"
+        >
+          Reset Password
         </button>
       </div>
     </section>

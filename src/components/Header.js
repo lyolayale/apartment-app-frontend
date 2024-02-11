@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ logout }) {
   return (
     <header className="flex justify-between items-center p-5 bg-gray-900 text-gray-50">
       <section>
@@ -21,12 +21,22 @@ export default function Header() {
             All Listings
           </li>
         </NavLink>
-        <li className="hidden md:inline cursor-pointer hover:text-yellow-100 hover:underline duration-200">
-          Log In
+        <NavLink to="/login">
+          <li className="hidden md:inline cursor-pointer hover:text-yellow-100 hover:underline duration-200">
+            Log In
+          </li>
+        </NavLink>
+        <li
+          onClick={logout}
+          className="hidden md:inline cursor-pointer hover:text-yellow-100 hover:underline duration-200"
+        >
+          Log Out
         </li>
-        <li className="hidden md:inline cursor-pointer hover:text-yellow-100 hover:underline duration-200">
-          Sign Up
-        </li>
+        <NavLink to="/signup">
+          <li className="hidden md:inline cursor-pointer hover:text-yellow-100 hover:underline duration-200">
+            Sign Up
+          </li>
+        </NavLink>
       </ul>
     </header>
   );
